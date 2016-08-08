@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="AC_Proves" width="796" height="688">
+  <node name="Inici" x="312" y="-156" width="193" height="40">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="Dades i generació document" x="287" y="97" width="242" height="48">
+    <edge>
+      <label x="-32" y="-11"/>
+    </edge>
+    <edge>
+      <label x="-24" y="-10"/>
+    </edge>
+  </node>
+  <node name="Enviar al Portasignatures" x="396" y="290" width="265" height="47">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="Signatura rebutjada" x="603" y="384" width="190" height="49">
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-1" h1="102" w2="163" h2="-2"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="0" h1="-98" w2="170" h2="-3"/>
+    </edge>
+  </node>
+  <node name="Dades portasignatures" x="396" y="192" width="265" height="40">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="Signatura applet" x="180" y="194" width="193" height="59">
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="1" h1="288" w2="-257" h2="-1"/>
+    </edge>
+  </node>
+  <node name="Signatura rebuda" x="298" y="383" width="179" height="50">
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="0" h1="104" w2="-147" h2="0"/>
+    </edge>
+  </node>
+  <node name="Alta client" x="336" y="-84" width="145" height="45">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="49" y="-313"/>
+      <bendpoint w1="-263" h1="1" w2="-389" h2="-573"/>
+      <bendpoint w1="-265" h1="573" w2="-391" h2="-1"/>
+    </edge>
+  </node>
+  <node name="Existeix client ?" x="336" y="0" width="145" height="49">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-263" h1="0" w2="-389" h2="-488"/>
+      <bendpoint w1="-265" h1="487" w2="-391" h2="-1"/>
+    </edge>
+  </node>
+  <node name="Fi" x="462" y="495" width="145" height="35"/>
+</root-container>
