@@ -13,7 +13,7 @@
 			<description>
 				Generació document i signatura applet
 			</description>
-			<assignment expression="group(XSN_GN_HELIUM_ADMIN)"></assignment>
+			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
 		<transition to="Signatura applet" name="Signatura applet"></transition>
 		<transition to="Dades portasignatures" name="Enviar al portasignatures"></transition>
@@ -48,7 +48,7 @@
 			<description>
 				Gestionar Signatura
 			</description>
-			<assignment expression="group(XSN_GN_HELIUM_ADMIN)"></assignment>
+			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
 		<transition to="Fi"></transition>
 		<transition to="Enviar al Portasignatures" name="Tornar a enviar"></transition>
@@ -56,28 +56,28 @@
 
 	<task-node name="Dades portasignatures">
 		<task name="N030_DADES_PORTASIGNATURES">
-			<assignment expression="group(XSN_GN_HELIUM_ADMIN)"></assignment>
+			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
 		<transition to="Enviar al Portasignatures" name="Enviar"></transition>
 	</task-node>
 
 	<task-node name="Signatura applet">
 		<task name="N020_SIGNATURA_APPLET">
-			<assignment expression="group(XSN_GN_HELIUM_ADMIN)"></assignment>
+			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
 		<transition to="Fi"></transition>
 	</task-node>
 
 	<task-node name="Signatura rebuda">
 		<task name="N040_SIGNATURA_REBUDA">
-			<assignment expression="group(XSN_GN_HELIUM_ADMIN)"></assignment>
+			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
 		<transition to="Fi"></transition>
 	</task-node>
 
 	<task-node name="Alta client">
 		<task name="N01_ALTA_CLIENT">
-			<assignment expression="group(XSN_GN_HELIUM_ADMIN)"></assignment>
+			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
 		<transition to="Existeix client ?" name="Processar"></transition>
 		<transition to="Fi" name="Finalitzar"></transition>

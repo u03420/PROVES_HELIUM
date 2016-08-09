@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<root-container name="AC_Proves" width="796" height="688">
+<root-container name="AC_Proves" width="814" height="722">
   <node name="Inici" x="312" y="-156" width="193" height="40">
     <edge>
       <label x="5" y="-10"/>
