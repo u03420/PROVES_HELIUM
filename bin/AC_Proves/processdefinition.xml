@@ -6,7 +6,7 @@
 
 
 	<start-state name="Inici">
-		<transition to="Alta client"></transition>
+		<transition to="Dades i generació document"></transition>
 	</start-state>
    <task-node name="Dades i generació document">
 		<task name="N010_DADES_DOCUMENT">
@@ -50,7 +50,7 @@
 			</description>
 			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
-		<transition to="Fi"></transition>
+		<transition to="Anar a nova signatura o sortir"></transition>
 		<transition to="Enviar al Portasignatures" name="Tornar a enviar"></transition>
 	</task-node>
 
@@ -65,30 +65,23 @@
 		<task name="N020_SIGNATURA_APPLET">
 			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
-		<transition to="Fi"></transition>
+		<transition to="Anar a nova signatura o sortir"></transition>
 	</task-node>
 
 	<task-node name="Signatura rebuda">
 		<task name="N040_SIGNATURA_REBUDA">
 			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
-		<transition to="Fi"></transition>
+		<transition to="Anar a nova signatura o sortir"></transition>
 	</task-node>
 
-	<task-node name="Alta client">
-		<task name="N01_ALTA_CLIENT">
+	<task-node name="Anar a nova signatura o sortir">
+		<task name="N060_NOVA_SIGNATURA_SORTIR">
 			<assignment expression="group(XSN_HELIUM_ADM)"></assignment>
 		</task>
-		<transition to="Existeix client ?" name="Processar"></transition>
-		<transition to="Fi" name="Finalitzar"></transition>
+		<transition to="Fi" name="Sortir"></transition>
+		<transition to="Dades i generació document" name="Tonar a dades generació document"></transition>
 	</task-node>
-
-	<decision name="Existeix client ?">
-		<transition to="Dades i generació document" name="Si">
-			<condition expression='#{exp_codcli != null &amp;&amp; exp_codcli !=""}'></condition>
-		</transition>
-		<transition to="Fi" name="No"></transition>
-	</decision>
 
    <end-state name="Fi"></end-state>
 
