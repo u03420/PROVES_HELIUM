@@ -13,6 +13,10 @@
     <edge>
       <label x="-24" y="-10"/>
     </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-103" h1="-72" w2="153" h2="0"/>
+    </edge>
   </node>
   <node name="Enviar al Portasignatures" x="396" y="290" width="265" height="47">
     <edge>
@@ -49,16 +53,16 @@
       <bendpoint w1="0" h1="101" w2="-145" h2="-1"/>
     </edge>
   </node>
-  <node name="Fi" x="455" y="591" width="145" height="35"/>
   <node name="Anar a nova signatura o sortir" x="416" y="492" width="224" height="36">
     <edge>
       <label x="-12" y="-21"/>
     </edge>
     <edge>
       <label x="102" y="201"/>
-      <bendpoint w1="-435" h1="-1" w2="-315" h2="388"/>
-      <bendpoint w1="-435" h1="-193" w2="-315" h2="196"/>
-      <bendpoint w1="-435" h1="-389" w2="-315" h2="0"/>
+      <bendpoint w1="-360" h1="-2" w2="-240" h2="387"/>
+      <bendpoint w1="-361" h1="-390" w2="-241" h2="-1"/>
     </edge>
   </node>
+  <node name="Notificació telemàtica" x="86" y="31" width="159" height="36"/>
+  <node name="Fi" x="455" y="591" width="145" height="35"/>
 </root-container>

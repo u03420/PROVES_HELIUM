@@ -17,6 +17,7 @@
 		</task>
 		<transition to="Signatura applet" name="Signatura applet"></transition>
 		<transition to="Dades portasignatures" name="Enviar al portasignatures"></transition>
+		<transition to="Notificació telemàtica"></transition>
 	</task-node>
 
 	<state name="Enviar al Portasignatures">
@@ -83,8 +84,13 @@
 		<transition to="Dades i generació document" name="Tonar a dades generació document"></transition>
 	</task-node>
 
-   <end-state name="Fi"></end-state>
+	<process-state name="Notificació telemàtica">
+		<sub-process name=""/>
+		<event type="node-enter">
+			<action name="notificacions_telem" class=""></event>
+	</process-state>
 
+   <end-state name="Fi"></end-state>
 
 
 
