@@ -14,8 +14,8 @@
       <label x="-24" y="-10"/>
     </edge>
     <edge>
-      <label x="5" y="-10"/>
-      <bendpoint w1="-103" h1="-72" w2="153" h2="0"/>
+      <label x="-32" y="9"/>
+      <bendpoint w1="-74" h1="-71" w2="166" h2="1"/>
     </edge>
   </node>
   <node name="Enviar al Portasignatures" x="396" y="290" width="265" height="47">
@@ -63,6 +63,6 @@
       <bendpoint w1="-361" h1="-390" w2="-241" h2="-1"/>
     </edge>
   </node>
-  <node name="Notificació telemàtica" x="86" y="31" width="159" height="36"/>
   <node name="Fi" x="455" y="591" width="145" height="35"/>
+  <node name="Notificació telemàtica" x="66" y="31" width="168" height="36"/>
 </root-container>
